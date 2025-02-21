@@ -1,0 +1,41 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# Stop the editor from looking for .editorconfig files in the parent directories
+# Top-most EditorConfig file
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+
+# Matches multiple files with brace expansion notation
+# Set default charset
+[*.{js,ts,tsx}]
+charset = utf-8
+
+# 2 space indentation
+indent_style = space
+indent_size = 2
+
+# Trim trailing whitespace
+trim_trailing_whitespace = true
+
+# Quotes (either single or double)
+quote_style = single
+
+# Trailing commas (generally preferred in ES6)
+trailing_comma = true
+
+# Matches the exact files either package.json or .travis.yml
+[{package.json,.travis.yml}]
+indent_style = space
+indent_size = 2
+
+# Tab indentation (no size specified)
+[Makefile]
+indent_style = tab
+
+# Markdown files (md)
+[*.md]
+trim_trailing_whitespace = false
