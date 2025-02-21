@@ -1,11 +1,16 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ES6",
     "useDefineForClassFields": true,
-    "module": "ESNext",
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ES6",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES6",
+      "ScriptHost"
+  ] /* Specify library files to be included in the compilation. */,
     "skipLibCheck": true,
-
+    "typeRoots": ["./node_modules/@types", "./src/types"],
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,

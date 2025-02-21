@@ -5,9 +5,83 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+    <!-- Header -->
+    <header class="bg-primary text-white p-2 d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <h2 class="ms-3 mb-0">Redux Demo</h2>
+        </div>
+        <div class="input-group w-50">
+            <input type="text" class="form-control" placeholder="Search...">
+            <button class="btn btn-light" type="button">Search</button>
+        </div>
+        <div class="d-flex align-items-center me-3">
+            <img src="https://via.placeholder.com/40" class="rounded-circle" alt="User">
+            <span class="ms-2">User Name</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-4">
+        <div id="app"></div>
+        <script type="module" src="/src/main.ts"></script>
+        <div class="row">
+            <!-- Feed Section -->
+            <div class="col-md-8">
+                <div class="mb-4">
+                    <h4>Create a Post</h4>
+                    <textarea class="form-control mb-2" rows="3" placeholder="What's on your mind?"></textarea>
+                    <button class="btn btn-primary">Post</button>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">User 1</h5>
+                        <p class="card-text">This is a post from User 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button class="btn btn-light">Like</button>
+                        <button class="btn btn-light">Comment</button>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">User 2</h5>
+                        <p class="card-text">Another post from User 2. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+                        <button class="btn btn-light">Like</button>
+                        <button class="btn btn-light">Comment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="col-md-4">
+                <div class="bg-light p-3 border mb-3">
+                    <h4>Friends</h4>
+                    <ul class="list-unstyled">
+                        <li>User 1</li>
+                        <li>User 2</li>
+                        <li>User 3</li>
+                    </ul>
+                </div>
+                <div class="bg-light p-3 border">
+                    <h4>Groups</h4>
+                    <ul class="list-unstyled">
+                        <li>Group 1</li>
+                        <li>Group 2</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2025 Redux Demo</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
