@@ -62,7 +62,9 @@ const ReduxStore = createStore(
 
 // Use subscribe() to update the UI in response to state changes.
 ReduxStore.subscribe(function () {
-  ReduxStore.getState();
+  let currentState=ReduxStore.getState();
+  // this get call everytime the state of the app change.
+  console.log("current app state: ", currentState);
 });
 
 // Example dispatches page events
